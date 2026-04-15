@@ -1,39 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Student Life</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #222; line-height: 1.6; }
+    header { background: #fff; padding: 15px 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .logo-wrap { display: flex; align-items: center; gap: 12px; }
+    .logo-wrap img { width: 55px; height: 55px; object-fit: contain; }
+    .logo-text { font-size: 24px; font-weight: bold; color: #333BEB; }
+    .nav-links { list-style: none; display: flex; gap: 20px; padding: 0; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: #333BEB; font-weight: bold; }
+    .nav-links a:hover { color: #5D07F5; }
+    .hero { background: linear-gradient(135deg, #207EBD, #333BEB); color: white; text-align: center; padding: 75px 20px; }
+    .content { max-width: 900px; margin: 40px auto; background: white; padding: 35px; border-radius: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+    form { display: flex; flex-direction: column; gap: 15px; }
+    input, textarea { padding: 14px; border: 1px solid #d9dfeb; border-radius: 10px; font-size: 16px; }
+    button { background: linear-gradient(135deg, #207EBD, #333BEB); color: white; border: none; padding: 14px; border-radius: 10px; cursor: pointer; font-size: 16px; font-weight: bold; }
+    button:hover { opacity: 0.92; }
+    footer { background: #333BEB; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="hero">
-        <h1>Contact Us</h1>
-        <p>We would love to hear from you!</p>
-    </section>
-    <section class="contact-form">
-        <form action="#" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Submit</button>
-        </form>
-    </section>
-    <footer>
-        <p>&copy; 2026 Student Life</p>
-    </footer>
+  <header>
+    <nav>
+      <div class="logo-wrap">
+        <img src="Student Life.png" alt="Student Life Logo">
+        <div class="logo-text">Student Life</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="study-tips.html">Study Tips</a></li>
+        <li><a href="mental-health.html">Mental Health</a></li>
+        <li><a href="productivity.html">Productivity</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>Questions, suggestions, or feedback? Reach out here.</p>
+  </section>
+
+  <div class="content">
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="6" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Student Life</p>
+  </footer>
 </body>
 </html>

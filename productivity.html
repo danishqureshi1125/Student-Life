@@ -1,54 +1,70 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Produktivitet - Student Life</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background: #6a0dad; /* Purple gradient */
-            padding: 10px;
-            color: white;
-            text-align: center;
-        }
-        .hero {
-            height: 300px;
-            background: linear-gradient(to right, #6a0dad, #8a2be2);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            font-size: 2rem;
-        }
-        .content {
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Productivity | Student Life</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #222; line-height: 1.6; }
+    header { background: #fff; padding: 15px 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .logo-wrap { display: flex; align-items: center; gap: 12px; }
+    .logo-wrap img { width: 55px; height: 55px; object-fit: contain; }
+    .logo-text { font-size: 24px; font-weight: bold; color: #333BEB; }
+    .nav-links { list-style: none; display: flex; gap: 20px; padding: 0; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: #333BEB; font-weight: bold; }
+    .nav-links a:hover { color: #5D07F5; }
+    .hero { background: linear-gradient(135deg, #333BEB, #5D07F5); color: white; text-align: center; padding: 75px 20px; }
+    .content { max-width: 1000px; margin: 40px auto; background: white; padding: 35px; border-radius: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+    .page-image { width: 100%; max-width: 420px; display: block; margin: 0 auto 25px; border-radius: 16px; }
+    h2 { color: #333BEB; margin-bottom: 15px; }
+    ul li { margin-bottom: 10px; }
+    footer { background: #333BEB; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Student Life</h1>
-        <nav>
-            <a href="index.html">Hjem</a> | 
-            <a href="about.html">Om Os</a> | 
-            <a href="contact.html">Kontakt</a>
-        </nav>
-    </header>
-    <div class="hero">
-        <h2>Bliv Mere Produktiv!</h2>
-    </div>
-    <div class="content">
-        <h3>Produktivitetstips</h3>
-        <ul>
-            <li>Planlæg din dag med en to-do liste.</li>
-            <li>Tag regelmæssige pauser for at genopfriske dit sind.</li>
-            <li>Eliminér distraktioner, når du arbejder.</li>
-            <li>Brug tidsstyringsteknikker som Pomodoro.</li>
-            <li>Fokuser på én opgave ad gangen.</li>
-        </ul>
-    </div>
+  <header>
+    <nav>
+      <div class="logo-wrap">
+        <img src="Student Life.png" alt="Student Life Logo">
+        <div class="logo-text">Student Life</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="study-tips.html">Study Tips</a></li>
+        <li><a href="mental-health.html">Mental Health</a></li>
+        <li><a href="productivity.html">Productivity</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Productivity</h1>
+    <p>Habits and routines to help students stay focused and efficient.</p>
+  </section>
+
+  <div class="content">
+    <img src="productivity.png" alt="Productivity" class="page-image">
+
+    <h2>Productivity Tips</h2>
+    <ul>
+      <li>Make a daily to-do list and prioritize tasks.</li>
+      <li>Use time-blocking to organize your day.</li>
+      <li>Avoid multitasking and focus on one task at a time.</li>
+      <li>Set deadlines for yourself to stay on track.</li>
+      <li>Reward yourself after finishing important work.</li>
+    </ul>
+
+    <h2>Why It Matters</h2>
+    <p>
+      Productivity helps students manage responsibilities more effectively and create better balance between school, work, and personal life.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Student Life</p>
+  </footer>
 </body>
 </html>

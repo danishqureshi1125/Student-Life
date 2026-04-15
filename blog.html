@@ -1,55 +1,103 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Student Life</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Student Life</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #222; line-height: 1.6; }
+    header { background: #fff; padding: 15px 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .logo-wrap { display: flex; align-items: center; gap: 12px; }
+    .logo-wrap img { width: 55px; height: 55px; object-fit: contain; }
+    .logo-text { font-size: 24px; font-weight: bold; color: #333BEB; }
+    .nav-links { list-style: none; display: flex; gap: 20px; padding: 0; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: #333BEB; font-weight: bold; }
+    .nav-links a:hover { color: #5D07F5; }
+    .hero { background: linear-gradient(135deg, #207EBD, #5D07F5); color: white; text-align: center; padding: 75px 20px; }
+    .wrapper { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+    .section-box { background: white; padding: 30px; border-radius: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); margin-bottom: 30px; }
+    .posts { display: grid; gap: 20px; }
+    .post { background: #f8fbff; padding: 22px; border-left: 5px solid #5D07F5; border-radius: 14px; }
+    .post h3 { color: #333BEB; margin-bottom: 10px; }
+    .post small { color: #666; display: block; margin-bottom: 10px; }
+    form { display: flex; flex-direction: column; gap: 15px; }
+    input, textarea { padding: 14px; border: 1px solid #d9dfeb; border-radius: 10px; font-size: 16px; }
+    button { background: linear-gradient(135deg, #207EBD, #333BEB); color: white; border: none; padding: 14px; border-radius: 10px; cursor: pointer; font-size: 16px; font-weight: bold; }
+    button:hover { opacity: 0.92; }
+    footer { background: #333BEB; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Student Life Blog</h1>
-    </header>
+  <header>
+    <nav>
+      <div class="logo-wrap">
+        <img src="Student Life.png" alt="Student Life Logo">
+        <div class="logo-text">Student Life</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="study-tips.html">Study Tips</a></li>
+        <li><a href="mental-health.html">Mental Health</a></li>
+        <li><a href="productivity.html">Productivity</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section id="featured-posts">
-        <h2>Featured Blog Posts</h2>
-        <article>
-            <h3>Post Title 1</h3>
-            <p>Excerpt for featured post 1. <a href="#">Read more...</a></p>
-        </article>
-        <article>
-            <h3>Post Title 2</h3>
-            <p>Excerpt for featured post 2. <a href="#">Read more...</a></p>
-        </article>
-    </section>
+  <section class="hero">
+    <h1>Student Blog</h1>
+    <p>Advice, shared experiences, and anonymous stories from student life.</p>
+  </section>
 
-    <section id="anonymous-student-stories">
-        <h2>Anonyme Studenterhistorier</h2>
-        <p>Her kan studerende dele deres historier anonymt.</p>
-        <article>
-            <h3>Historie 1</h3>
-            <p>En anonym historie fra en studerende.</p>
-        </article>
-        <article>
-            <h3>Historie 2</h3>
-            <p>En anden anonym historie</p>
-        </article>
-    </section>
+  <div class="wrapper">
+    <div class="section-box">
+      <h2>Featured Posts</h2>
+      <div class="posts">
+        <div class="post">
+          <h3>How to Stay Productive During Exams</h3>
+          <small>Posted by Student Life Team</small>
+          <p>Exam season can feel overwhelming, but breaking your tasks into smaller goals can make studying more manageable.</p>
+        </div>
 
-    <section id="submit-post">
-        <h2>Indsend Anonym Post</h2>
-        <form action="#" method="post">
-            <label for="post-title">Titel:</label>
-            <input type="text" id="post-title" name="post-title" required>
+        <div class="post">
+          <h3>5 Ways to Reduce Stress in College</h3>
+          <small>Posted by Student Life Team</small>
+          <p>Finding time to rest, staying organized, and asking for support can make a big difference during busy weeks.</p>
+        </div>
+      </div>
+    </div>
 
-            <label for="post-content">Indhold:</label>
-            <textarea id="post-content" name="post-content" required></textarea>
+    <div class="section-box">
+      <h2>Anonymous Student Stories</h2>
+      <div class="posts">
+        <div class="post">
+          <h3>Anonymous Story #1</h3>
+          <small>Submitted anonymously</small>
+          <p>I felt like everyone around me had life figured out except me. Over time, I learned that a lot of students feel the same way, even if they do not show it.</p>
+        </div>
 
-            <input type="submit" value="Indsend">
-        </form>
-    </section>
+        <div class="post">
+          <h3>Anonymous Story #2</h3>
+          <small>Submitted anonymously</small>
+          <p>Balancing work and school has been one of the hardest things for me. Some weeks feel impossible, but reminding myself to take things one step at a time really helps.</p>
+        </div>
+      </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2026 Student Life. Alle rettigheder forbeholdes.</p>
-    </footer>
+    <div class="section-box">
+      <h2>Share Your Experience Anonymously</h2>
+      <form>
+        <input type="text" placeholder="Title of your post">
+        <textarea rows="6" placeholder="Share your experience, challenge, or advice anonymously..."></textarea>
+        <button type="submit">Submit Post</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Student Life</p>
+  </footer>
 </body>
 </html>

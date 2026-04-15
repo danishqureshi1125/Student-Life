@@ -1,80 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Life</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #FFFFFF;
-            color: #333BEB;
-        }
-        nav {
-            background-color: #207EBD;
-            padding: 1em;
-            display: flex;
-            justify-content: space-between;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 0.5em 1em;
-        }
-        .hero {
-            background-color: #4BEBFA;
-            padding: 50px;
-            text-align: center;
-        }
-        .section {
-            padding: 20px;
-            margin: 10px;
-        }
-        .study-tips, .mental-health, .productivity, .blog {
-            background-color: #f2f2f2;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        footer {
-            background-color: #333BEB;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Life</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #FFFFFF;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #333BEB;
+      padding: 15px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #4BEBFA;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #207EBD, #5D07F5);
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    .hero button {
+      background-color: #4BEBFA;
+      color: #111;
+      border: none;
+      padding: 12px 24px;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    .hero button:hover {
+      background-color: #ffffff;
+    }
+
+    .section {
+      padding: 60px 40px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 30px;
+      color: #333BEB;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background-color: #f7f7f7;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #207EBD;
+    }
+
+    .blog-posts {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      text-align: left;
+    }
+
+    .post {
+      background-color: #eef9ff;
+      padding: 20px;
+      border-left: 5px solid #5D07F5;
+      border-radius: 8px;
+    }
+
+    .post h4 {
+      margin-bottom: 10px;
+      color: #333BEB;
+    }
+
+    .contact {
+      background-color: #f4f4f4;
+    }
+
+    .contact form {
+      max-width: 600px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 16px;
+    }
+
+    .contact button {
+      background-color: #207EBD;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .contact button:hover {
+      background-color: #333BEB;
+    }
+
+    footer {
+      background-color: #333BEB;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero h1 {
+        font-size: 34px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+    }
+  </style>
 </head>
 <body>
+
+  <header>
     <nav>
-        <div><a href="#">Home</a></div>
-        <div><a href="#study-tips">Study Tips</a></div>
-        <div><a href="#mental-health">Mental Health</a></div>
-        <div><a href="#productivity">Productivity</a></div>
-        <div><a href="#blog">Blog</a></div>
+      <div class="logo">Student Life</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tips">Study Tips</a></li>
+        <li><a href="#mental">Mental Health</a></li>
+        <li><a href="#productivity">Productivity</a></li>
+        <li><a href="#blog">Blog</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
-    <div class="hero">
-        <h1>Welcome to Student Life</h1>
-        <p>Your guide to a balanced and productive student experience.</p>
+  </header>
+
+  <section class="hero" id="home">
+    <h1>Welcome to Student Life</h1>
+    <p>Your guide to balancing academics, productivity, and well-being in college.</p>
+    <button onclick="document.getElementById('tips').scrollIntoView({behavior:'smooth'})">
+      Explore More
+    </button>
+  </section>
+
+  <section class="section" id="tips">
+    <h2>Study Tips</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://via.placeholder.com/400x180/207EBD/FFFFFF?text=Study+Tips" alt="Study Tips">
+        <div class="card-content">
+          <h3>Smart Study Methods</h3>
+          <p>Use active recall, practice tests, and short study sessions to improve memory and focus.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x180/333BEB/FFFFFF?text=Mental+Health" alt="Mental Health">
+        <div class="card-content">
+          <h3>Mental Health</h3>
+          <p>Take breaks, manage stress, and build healthy routines to protect your mental well-being.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/400x180/5D07F5/FFFFFF?text=Productivity" alt="Productivity">
+        <div class="card-content">
+          <h3>Productivity</h3>
+          <p>Stay organized with planners, to-do lists, and time management strategies that actually work.</p>
+        </div>
+      </div>
     </div>
-    <section id="study-tips" class="section study-tips">
-        <h2>Study Tips</h2>
-        <p>Here you will find tips and resources to help you study effectively.</p>
-    </section>
-    <section id="mental-health" class="section mental-health">
-        <h2>Mental Health</h2>
-        <p>Prioritize your mental well-being with our resources and support.</p>
-    </section>
-    <section id="productivity" class="section productivity">
-        <h2>Productivity</h2>
-        <p>Boost your productivity with our effective strategies and tools.</p>
-    </section>
-    <section id="blog" class="section blog">
-        <h2>Blog</h2>
-        <p>Read articles and insights on various student life topics.</p>
-    </section>
-    <footer>
-        <p>&copy; 2026 Student Life. All rights reserved.</p>
-    </footer>
+  </section>
+
+  <section class="section" id="blog">
+    <h2>Featured Blog Posts</h2>
+    <div class="blog-posts">
+      <div class="post">
+        <h4>How to Stay Productive During Exams</h4>
+        <p>Learn how to manage your time, avoid burnout, and stay focused during busy exam weeks.</p>
+      </div>
+      <div class="post">
+        <h4>5 Ways to Reduce Stress in College</h4>
+        <p>Simple strategies students can use to feel calmer and more in control during the semester.</p>
+      </div>
+      <div class="post">
+        <h4>Building Better Study Habits</h4>
+        <p>Discover practical habits that can improve concentration, consistency, and academic success.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Student Life | Contact | Social Media</p>
+  </footer>
+
 </body>
 </html>

@@ -1,54 +1,70 @@
 <!DOCTYPE html>
-<html lang="da">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mentalt Sundhed</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .hero {
-            background: linear-gradient(to right, #00bfae, #00897b);
-            color: white;
-            padding: 100px 20px;
-            text-align: center;
-        }
-        .content {
-            padding: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mental Health | Student Life</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; background: #f7f9fc; color: #222; line-height: 1.6; }
+    header { background: #fff; padding: 15px 40px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+    nav { display: flex; justify-content: space-between; align-items: center; gap: 20px; flex-wrap: wrap; }
+    .logo-wrap { display: flex; align-items: center; gap: 12px; }
+    .logo-wrap img { width: 55px; height: 55px; object-fit: contain; }
+    .logo-text { font-size: 24px; font-weight: bold; color: #333BEB; }
+    .nav-links { list-style: none; display: flex; gap: 20px; padding: 0; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: #333BEB; font-weight: bold; }
+    .nav-links a:hover { color: #5D07F5; }
+    .hero { background: linear-gradient(135deg, #4BEBFA, #207EBD); color: white; text-align: center; padding: 75px 20px; }
+    .content { max-width: 1000px; margin: 40px auto; background: white; padding: 35px; border-radius: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
+    .page-image { width: 100%; max-width: 420px; display: block; margin: 0 auto 25px; border-radius: 16px; }
+    h2 { color: #207EBD; margin-bottom: 15px; }
+    ul li { margin-bottom: 10px; }
+    footer { background: #333BEB; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+  </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#home">Hjem</a>
-            <a href="#about">Om</a>
-            <a href="#services">Tjenester</a>
-            <a href="#contact">Kontakt</a>
-        </nav>
-    </header>
-    <div class="hero">
-        <h1>Mentalt Sundhed Støtte</h1>
-        <p>Vi er her for at hjælpe dig.</p>
-    </div>
-    <div class="content">
-        <h2>Støtte til mental sundhed</h2>
-        <p>Vores ressourcer er designet til at støtte studerende, der kæmper med deres mentale sundhed. Vi tilbyder rådgivning, workshops, og en sikker plads at dele og vokse.</p>
-        <p>Du er ikke alene, og vi er her for at støtte dig gennem denne rejse.</p>
-    </div>
+  <header>
+    <nav>
+      <div class="logo-wrap">
+        <img src="Student Life.png" alt="Student Life Logo">
+        <div class="logo-text">Student Life</div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="study-tips.html">Study Tips</a></li>
+        <li><a href="mental-health.html">Mental Health</a></li>
+        <li><a href="productivity.html">Productivity</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Mental Health</h1>
+    <p>Support, balance, and healthy routines for students.</p>
+  </section>
+
+  <div class="content">
+    <img src="mental-health.png" alt="Mental Health" class="page-image">
+
+    <h2>Ways to Support Your Mental Health</h2>
+    <ul>
+      <li>Take breaks and rest when needed.</li>
+      <li>Talk to someone you trust when you feel overwhelmed.</li>
+      <li>Practice self-care through sleep, hydration, and exercise.</li>
+      <li>Set realistic goals and avoid overloading yourself.</li>
+      <li>Remember that asking for help is a strength.</li>
+    </ul>
+
+    <h2>Why It Matters</h2>
+    <p>
+      Mental health plays a major role in academic success, motivation, and overall well-being. Taking care of yourself helps you perform better in every area of life.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Student Life</p>
+  </footer>
 </body>
 </html>

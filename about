@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Student Life</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <h2 class="logo">Student Life</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="study.html">Study Tips</a></li>
+        <li><a href="mental.html">Mental Health</a></li>
+        <li><a href="productivity.html">Productivity</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h1>About Student Life</h1>
+    <p>Student Life is a website created to help college students stay organized, motivated, and balanced.</p>
+  </section>
+
+  <section class="content-section">
+    <div class="content-card">
+      <h2>Purpose of the Website</h2>
+      <p>
+        The purpose of Student Life is to give students a simple place to find advice about studying,
+        productivity, mental health, and everyday college responsibilities. Many students struggle with
+        balancing school, work, and personal life, so this website provides practical tips that are easy
+        to understand and apply.
+      </p>
+    </div>
+
+    <div class="content-card">
+      <h2>Who This Website Helps</h2>
+      <p>
+        This website is mainly designed for college students who want to improve their habits, reduce stress,
+        and become more productive. It can help students who are preparing for exams, managing deadlines,
+        working part time jobs, or trying to build better routines.
+      </p>
+    </div>
+
+    <div class="content-card">
+      <h2>Project Goal</h2>
+      <p>
+        This project was created for ITSS 4371 to demonstrate how a website can be built and deployed using
+        cloud technology. The website was developed with HTML, CSS, and JavaScript, managed through GitHub,
+        and hosted using AWS.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Student Life. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

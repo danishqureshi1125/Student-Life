@@ -14,14 +14,79 @@
     .nav-links { list-style: none; display: flex; gap: 20px; padding: 0; flex-wrap: wrap; }
     .nav-links a { text-decoration: none; color: #333BEB; font-weight: bold; }
     .nav-links a:hover { color: #5D07F5; }
-    .hero { background: linear-gradient(135deg, #207EBD, #333BEB); color: white; text-align: center; padding: 75px 20px; }
-    .content { max-width: 1000px; margin: 40px auto; background: white; padding: 35px; border-radius: 18px; box-shadow: 0 6px 20px rgba(0,0,0,0.08); }
-    .page-image { width: 100%; max-width: 420px; display: block; margin: 0 auto 25px; border-radius: 16px; }
-    h2 { color: #207EBD; margin-bottom: 15px; }
-    ul li { margin-bottom: 10px; }
-    footer { background: #333BEB; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+
+    .hero {
+      background: linear-gradient(135deg, #207EBD, #333BEB);
+      color: white;
+      text-align: center;
+      padding: 75px 20px;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 40px auto;
+      background: white;
+      padding: 35px;
+      border-radius: 18px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+    }
+
+    h2 {
+      color: #207EBD;
+      margin-bottom: 15px;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 25px;
+    }
+
+    .resource-card {
+      background: #f8fbff;
+      border-left: 5px solid #333BEB;
+      border-radius: 14px;
+      padding: 22px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+    }
+
+    .resource-card h3 {
+      color: #333BEB;
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .resource-card p {
+      margin-bottom: 10px;
+    }
+
+    .resource-card ul {
+      padding-left: 20px;
+    }
+
+    .resource-card li {
+      margin-bottom: 8px;
+    }
+
+    .tip-box {
+      margin-top: 30px;
+      background: linear-gradient(135deg, #eef4ff, #f8fbff);
+      border-radius: 14px;
+      padding: 22px;
+      border: 1px solid #dce7ff;
+    }
+
+    footer {
+      background: #333BEB;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
   </style>
 </head>
+
 <body>
   <header>
     <nav>
@@ -29,6 +94,7 @@
         <img src="student-life-bg.png" alt="Student Life Logo">
         <div class="logo-text">Student Life</div>
       </div>
+
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="study-tips.html">Study Tips</a></li>
@@ -44,36 +110,94 @@
 
   <section class="hero">
     <h1>Student Resources</h1>
-    <p>Helpful tools and support ideas for students during the semester.</p>
+    <p>Helpful academic, wellness, and productivity resources for college students.</p>
   </section>
 
   <div class="content">
-    <h2>Academic Support</h2>
-    <ul>
-      <li>Use professor office hours when you are confused about assignments or exams.</li>
-      <li>Join study groups to review difficult material with classmates.</li>
-      <li>Use tutoring centers or academic support services when extra help is needed.</li>
-    </ul>
-
-    <h2>Time Management Tools</h2>
-    <ul>
-      <li>Use Google Calendar or a planner to track deadlines and exams.</li>
-      <li>Create weekly to-do lists to stay organized.</li>
-      <li>Break large assignments into smaller steps.</li>
-    </ul>
-
-    <h2>Wellness Resources</h2>
-    <ul>
-      <li>Take breaks during long study sessions.</li>
-      <li>Talk to someone you trust when you feel overwhelmed.</li>
-      <li>Build healthy habits like sleep, hydration, and exercise.</li>
-    </ul>
-
-    <h2>Productivity Apps</h2>
+    <h2>Resource Center</h2>
     <p>
-      Helpful apps for students include Google Calendar, Microsoft To Do, Notion, Quizlet, and Pomodoro timers.
-      These tools can help with planning, studying, and staying focused.
+      College can be stressful when students are trying to manage classes, assignments, exams,
+      work schedules, and personal responsibilities. This page brings together practical resources
+      students can use to stay organized, get support, and build better habits.
     </p>
+
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <h3>Academic Support</h3>
+        <p>Use academic support when class material becomes difficult or confusing.</p>
+        <ul>
+          <li>Visit professor office hours for assignment or exam questions.</li>
+          <li>Join a study group with classmates.</li>
+          <li>Use tutoring services for difficult subjects.</li>
+          <li>Review lecture notes within 24 hours after class.</li>
+        </ul>
+      </div>
+
+      <div class="resource-card">
+        <h3>Study Tools</h3>
+        <p>These tools can help students study more effectively.</p>
+        <ul>
+          <li>Quizlet for flashcards and practice review.</li>
+          <li>Google Docs for shared notes.</li>
+          <li>Pomodoro timers for focused study sessions.</li>
+          <li>Practice tests for active recall.</li>
+        </ul>
+      </div>
+
+      <div class="resource-card">
+        <h3>Time Management</h3>
+        <p>Planning ahead makes deadlines easier to manage.</p>
+        <ul>
+          <li>Use Google Calendar to track exams and due dates.</li>
+          <li>Create a weekly checklist every Sunday or Monday.</li>
+          <li>Break large assignments into smaller tasks.</li>
+          <li>Set reminders at least one day before deadlines.</li>
+        </ul>
+      </div>
+
+      <div class="resource-card">
+        <h3>Mental Health Support</h3>
+        <p>Students should ask for help early when stress builds up.</p>
+        <ul>
+          <li>Talk to a trusted friend, family member, or advisor.</li>
+          <li>Use campus counseling or wellness services if available.</li>
+          <li>Take breaks during long study sessions.</li>
+          <li>Do not wait until burnout gets worse.</li>
+        </ul>
+      </div>
+
+      <div class="resource-card">
+        <h3>Productivity Apps</h3>
+        <p>Apps can help students stay organized and focused.</p>
+        <ul>
+          <li>Notion for notes, planning, and organization.</li>
+          <li>Microsoft To Do for daily task lists.</li>
+          <li>Google Calendar for scheduling.</li>
+          <li>Forest or Pomodoro apps for focus sessions.</li>
+        </ul>
+      </div>
+
+      <div class="resource-card">
+        <h3>Healthy Habits</h3>
+        <p>Small habits can improve energy, focus, and motivation.</p>
+        <ul>
+          <li>Get enough sleep before exams.</li>
+          <li>Drink water throughout the day.</li>
+          <li>Take short walks or stretch breaks.</li>
+          <li>Eat balanced meals when possible.</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="tip-box">
+      <h2>Student Success Tip</h2>
+      <p>
+        The best resource is the one you actually use consistently. Start with one habit,
+        such as using a weekly planner or attending office hours, and build from there.
+      </p>
+    </div>
   </div>
 
   <footer>
